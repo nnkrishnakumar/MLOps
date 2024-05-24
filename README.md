@@ -1,22 +1,47 @@
 # MLOps
 
-1> Introduction to Azure Service Cloud Service
+2. The stages of MLOps:
+-----------------------
+    i.  Data Collection and Preparations : 
+        > Data ingestion, Preparation , exploration.
+        > Define Goal & identify data source,
+        > Prepare, Label and explore raw data.
+        > Convert raw data to features.
 
-2> Transformation from traditional way to cloud platform
+    ii. Model Development and Training:
+        > Getting data ready for ML Model.
+        > Perform model training and validation.
+        > Evaluation of ML Models.
 
-3> What is virtualization & creating VM?
+            Here ml pipeline comes in picture:
+                ML pipeline is cruicial
+                Modularization and versioned(git repository)
+                Automation Pipeline
 
-4> what is MLOPS & Process of MLOPS?
+            Here we will learn various tools like:
+                1> github
+                2> mlflow
+                3> jenkins
+                4> cloud resources
+                5> Cloud computing
+                6> Grafana
+                7> Chromithius
+                8> Contanerization platform
 
-5> Understanding ML Pipelines
+    Once the model Development is complete then proced with 
 
-6> What is Hyperparameters Turning?
+    iii> ML service deployment:
 
-7> Creating Resource group & Storage Account
+        1> Integrate with existing application
+        2> Create Front end
+        3> Containerize the application
+        4> API services
+        5> Model endpoint
 
-8> Creating Azure Machine Learning Work space
+    iv> Continuous Feedback Monitoring:
+        1> Track data & Infrastructure
+        2> Model
+        3> Application Metrics
 
-9> Creating Azure ML Pipelines Using Notebook
-
-10> Creating Azure ML Pipelines Using Designer Option 
-
+# Chapter3:
+-----------
