@@ -88,3 +88,19 @@ Role of Git in MLOps:
 > Infrastructure as Code(IaC):
     * Git is used to version control infrastructure configureations as code, ensuring consistency between development, testing and production environments. This is particularly relevant in MLOps, where the deplyments infrastructure is a critical component.
 
+> Collaboration Across Teams:
+    * In MLOps, where teams may include data scientists, engineers, and opeartions professionals, GIt server as a common platform for collaboration, enabling effective communication and coordination across differnt stages of the machine leaning lifecycle.
+
+> Artifcat Management:
+    * Git is used in conjunction with artifact repository to manage and version control artifacts such as trained models, datasets and other dependencies. This ensures that all components of a machine learning project are tracked and reproducible.
+
+-------------------------------------------------------
+Local Repository and Remote Repo:
+---------------------------------
+Repository: Arepository(also known as a repo) is how we reger to a project version controlled by Git.
+
+Local Repo                    Remote Repo
+
+computer                   hosted on a hosting        --> Github/gitlab/bigbucket/code commit  ---> store the file over cloud 
+                                service
+
