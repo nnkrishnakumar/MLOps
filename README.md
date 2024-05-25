@@ -66,3 +66,25 @@ What is git?
 > Git is a technology designed for tracking changes in a project and facilitating collaboration among multiple contributors.
 > A Git-contorlled project at its core consists of a folder containing files, with Git monitoring changes made to these files.
 > Git's primary function is to enable the storage of vairous versions of project work, earning it the title of version control system.
+
+Role of Git in MLOps:
+----------------------
+> Version Control:
+    * Git plays a cruical role in MLOps by providing version control for machine learning models, code, and configuration files. This ensures traceability and reproducibility of experiments and model deployments.
+
+> Collaboration and Team Workflow.
+    * Git facilitates collaboration among data scientist, engineers and other team memebers, allowing them to work concurrently on differnt aspects of the machine learning pipeline. It enables
+    seamless integration of changes and helps manage collaborative development efforts.
+
+> Experiment Tracking:
+    * Git, in conjunction with tolls like Git-based platforms or MLflow, helps track and manage machine learning experiments.This includes recording parameters, metrics and code versions making it easier to repoduce and conpare result.
+
+> Branching for Experimentation:
+    * Git's branching feature allows for the creation of isolated branches to experiment with differnt model versions or parameter settings.This supports a systematic approach to testing and refining models without affecting the main codebase.
+
+ > COntinuous Interation(CI) and Continuous Deployment(CD):
+    * Git integrates with CI/CD systems to automate the testing and deployment of machine learning models. This ensures that changes to the codebase are validated and successful builds trigger automated deployment pipelines for model updates.
+
+> Infrastructure as Code(IaC):
+    * Git is used to version control infrastructure configureations as code, ensuring consistency between development, testing and production environments. This is particularly relevant in MLOps, where the deplyments infrastructure is a critical component.
+
