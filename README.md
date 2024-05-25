@@ -45,3 +45,24 @@
 
 # Chapter3:
 -----------
+Introduction to Version Control System:
+
+> Git is an opensource Distributed Version Control System(DVCS).
+> A version control system allows you to record changes to files over a period.
+> Git is used to maintain the historical and current versions of source code.
+
+
+Usage at a High level:
+-----------------------
+> In a project, developres have a copy of all version of the code stored in the central server.
+> Git allows developers to do the following:
+    * Track the changes, who made the changes and when
+    * Rollback/restore changes
+    * Allow multiple developers to coordinate the work on the same files.
+    * Maintain a copy of the files at the remote and local level.
+
+What is git?
+------------
+> Git is a technology designed for tracking changes in a project and facilitating collaboration among multiple contributors.
+> A Git-contorlled project at its core consists of a folder containing files, with Git monitoring changes made to these files.
+> Git's primary function is to enable the storage of vairous versions of project work, earning it the title of version control system.
