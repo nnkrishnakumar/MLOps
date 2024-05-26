@@ -45,6 +45,7 @@
 
 # Chapter3:
 -----------
+<<<<<<< HEAD
 Git and Github foundation for MLOps:
 
 Question: what is git?
@@ -140,4 +141,64 @@ output:
 C:\Users\aimar\OneDrive\Desktop\Learning\MLops\MLOps>git config --global --list
 user.email=nnkrishna714@gmail.com
 user.name=nnkrishnakumar
+=======
+Introduction to Version Control System:
+
+> Git is an opensource Distributed Version Control System(DVCS).
+> A version control system allows you to record changes to files over a period.
+> Git is used to maintain the historical and current versions of source code.
+
+
+Usage at a High level:
+-----------------------
+> In a project, developres have a copy of all version of the code stored in the central server.
+> Git allows developers to do the following:
+    * Track the changes, who made the changes and when
+    * Rollback/restore changes
+    * Allow multiple developers to coordinate the work on the same files.
+    * Maintain a copy of the files at the remote and local level.
+
+What is git?
+------------
+> Git is a technology designed for tracking changes in a project and facilitating collaboration among multiple contributors.
+> A Git-contorlled project at its core consists of a folder containing files, with Git monitoring changes made to these files.
+> Git's primary function is to enable the storage of vairous versions of project work, earning it the title of version control system.
+
+Role of Git in MLOps:
+----------------------
+> Version Control:
+    * Git plays a cruical role in MLOps by providing version control for machine learning models, code, and configuration files. This ensures traceability and reproducibility of experiments and model deployments.
+
+> Collaboration and Team Workflow.
+    * Git facilitates collaboration among data scientist, engineers and other team memebers, allowing them to work concurrently on differnt aspects of the machine learning pipeline. It enables
+    seamless integration of changes and helps manage collaborative development efforts.
+
+> Experiment Tracking:
+    * Git, in conjunction with tolls like Git-based platforms or MLflow, helps track and manage machine learning experiments.This includes recording parameters, metrics and code versions making it easier to repoduce and conpare result.
+
+> Branching for Experimentation:
+    * Git's branching feature allows for the creation of isolated branches to experiment with differnt model versions or parameter settings.This supports a systematic approach to testing and refining models without affecting the main codebase.
+
+ > COntinuous Interation(CI) and Continuous Deployment(CD):
+    * Git integrates with CI/CD systems to automate the testing and deployment of machine learning models. This ensures that changes to the codebase are validated and successful builds trigger automated deployment pipelines for model updates.
+
+> Infrastructure as Code(IaC):
+    * Git is used to version control infrastructure configureations as code, ensuring consistency between development, testing and production environments. This is particularly relevant in MLOps, where the deplyments infrastructure is a critical component.
+
+> Collaboration Across Teams:
+    * In MLOps, where teams may include data scientists, engineers, and opeartions professionals, GIt server as a common platform for collaboration, enabling effective communication and coordination across differnt stages of the machine leaning lifecycle.
+
+> Artifcat Management:
+    * Git is used in conjunction with artifact repository to manage and version control artifacts such as trained models, datasets and other dependencies. This ensures that all components of a machine learning project are tracked and reproducible.
+
+-------------------------------------------------------
+Local Repository and Remote Repo:
+---------------------------------
+Repository: Arepository(also known as a repo) is how we reger to a project version controlled by Git.
+
+Local Repo                    Remote Repo
+
+computer                   hosted on a hosting        --> Github/gitlab/bigbucket/code commit  ---> store the file over cloud 
+                                service
+>>>>>>> 41197bc8d3e77e2455ee87db33a1129acf359042
 
