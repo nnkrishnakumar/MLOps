@@ -125,6 +125,7 @@ git version
 git config --global --list
 git config --global user.name "nnkrishnakumar"
 git config --global user.email "nnkrishna714@gmail.com"
+git config --global init.defaultBranch main
 git config --global --list
 git init -b main
 
