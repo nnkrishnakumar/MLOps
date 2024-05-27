@@ -237,7 +237,9 @@ git log     # use to see current log of current version of git
 # switching the branch in Git:
 ------------------------------
 ```
-git switch <branch_name>            # to switch the branch from one to another 
+git switch <branch_name>            # to switch the branch from one to another  
+
+git checkout <branch_name >         # to move to the another branch
 
 git branch                          # to see the all branches with "*" sign followed by <branch_name>
 
@@ -247,10 +249,44 @@ git log                             #commit 40character_hax_values (HEAD -><bran
 
 ```
 
+##########################################################################################################################################
+### git switch <branch_name>
+* Purpose: Specifically designed for switching branches.
+* Simplicity: More user-friendly and easier to understand for beginners.
+* Safety: Less likely to be misused for other operations. It is limited to switching branches and creating new branches.
+* Introduction: Introduced in Git 2.23 as part of an effort to split the functionalities of git checkout into more specific commands.
+
+### git checkout <branch_name>
+* Purpose: A versatile command used for various operations, including switching branches, checking out files, and creating new branches.
+* Complexity: More powerful but also more complex, as it handles multiple tasks.
+* Legacy: Older command, available in all versions of Git, and widely used.
+* Flexibility: Can be used for other operations like checking out specific commits, files, or paths.
+
+##########################################################################################################################################
 # Merging concept in git:
 -------------------------
 
 In Git, merging refers to the process of combining changes from difernt branches.
 
 When you work on a project with multiple collaborators or when you are managing differnt features of bug fixes in separate branches, you may need to merge those changes banck into the main branch or another target branch.
+
+## Type of Merging:
+-------------------
+
+1> Fast forward merge
+2> Three-ways Merge
+
+1> Fast Forward merge:
+    * This occurs when the branch being merged has no new commits that the branch it is merging into doesn't already have.
+
+    * In a fast-forward merge, Git simply moves the branh pointer forward, and no new merge commit is created.
+
+2> Three- way Merge:
+    * This coccurs when there are divergent changes in both the source and target branches.
+
+    * Git creates a new commit, known as a "merge commit," that has two parent commits- one from the source branch and one from the traget branch.
+
+    * The merge commit represents the combinantion of changes from both branches.
+
+
 
