@@ -281,6 +281,61 @@ When you work on a project with multiple collaborators or when you are managing 
 
     * In a fast-forward merge, Git simply moves the branh pointer forward, and no new merge commit is created.
 
+    ```
+    git switch dev
+    git checkout dev
+    #upload source code
+    git add .
+    git commit -m "V3"
+    git log
+    git checkout main
+    
+    ```
+
+    # create fast-forwad merger:
+
+    ```
+    git switch dev 
+    git merger dev
+
+    ```
+
+    ###################################################################################################################################################
+    # Output:
+
+    Fast-Forward: 
+    -------------
+
+    (base) admin1@CHETUIWK1850:~/Desktop/Learning/mlops_udemy/MLOps$ git checkout main
+    Switched to branch 'main'
+    Your branch is up to date with 'origin/main'.
+    (base) admin1@CHETUIWK1850:~/Desktop/Learning/mlops_udemy/MLOps$ git merge dev
+    Updating 8bff52a..df94865
+    Fast-forward
+    README.md | 88 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    1 file changed, 88 insertions(+)
+    (base) admin1@CHETUIWK1850:~/Desktop/Learning/mlops_udemy/MLOps$ git log
+    commit df94865857bc3bddfe0c746014d12ffcaf3f0345 (HEAD -> main, dev)
+    Author: admin1 <nnkrishna714@gmail.com>
+    Date:   Mon May 27 16:50:05 2024 +0530
+
+        v4
+
+    commit 0c1ddbe6cc7f70b23b0b305ca33bc62b733302a8
+    Author: admin1 <nnkrishna714@gmail.com>
+    Date:   Mon May 27 16:11:56 2024 +0530
+
+        commit
+
+    commit 8bff52add85b76ad50ad9e28e8c1f1321685a3b5 (origin/main, origin/HEAD)
+    Merge: 4447a4a 41197bc
+    Author: nnkrishnakumar <nnkrishna714@gmail.com>
+    Date:   Sun May 26 17:35:20 2024 +0530
+
+    #####################################################################################################################################################
+
+
+
 2> Three- way Merge:
     * This coccurs when there are divergent changes in both the source and target branches.
 
@@ -289,4 +344,38 @@ When you work on a project with multiple collaborators or when you are managing 
     * The merge commit represents the combinantion of changes from both branches.
 
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+# Checking out commit:
+----------------------
+Checking out commits refers to the process of switching your codebase to sa specific commit in a version control system.
+
+-->
+
+When you check out a commit , you are essentially telling the version control system to set your woking directory and codebase to the state it was in at the time of that specific commit.
+
+-->
+
+Uses:
+    * debugging
+    * branching 
+    * reviewing history
+
+
+```
+git checkout <commit-hash>
+git checkout -b <branch_name>    # to create new branch and switch to it
+
+git switch -c <branch_name>       #to create a new branch and switch to it similary like4 git checkout<branch_name>
+
+```
+
+
+# git hosting services:
+-----------------------
+
+* Git hosting services are platforms that provides infrastructure and tools for hosting, managing and collaborating on Git repositories.
+
+* These services make it easier for indiviuals and teams to use Git for version control and collaboractive software development.
+
+* Examples: GitHub, GitLab, Bitbucket, Azure DevOps services,SourceForge, GitKraken, AWS CodeCommit, etc.
