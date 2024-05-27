@@ -202,3 +202,55 @@ computer                   hosted on a hosting        --> Github/gitlab/bigbucke
                                 service
 >>>>>>> 41197bc8d3e77e2455ee87db33a1129acf359042
 
+
+
+# Working with local repository:
+---------------------------------
+
+```
+git init
+git status
+git add <file_name>
+git status
+git commit -m "my first commit"
+git status
+git log
+
+```
+
+# Git Branch:
+-------------
+```
+git branch      # it help us to see the branched in the .git(local repository)
+
+git branch <new_branch_name>      # to create new branch
+
+git branch     # use to see all branch and *branch_name :> here "*" is used to see the current activate branch.
+
+git log     # use to see current log of current version of git
+
+```
+
+* branch : definition : moveable point to commit
+
+
+# switching the branch in Git:
+------------------------------
+```
+git switch <branch_name>            # to switch the branch from one to another 
+
+git branch                          # to see the all branches with "*" sign followed by <branch_name>
+
+git status                          # On branch <branch_name>
+
+git log                             #commit 40character_hax_values (HEAD -><branch_name>, main)
+
+```
+
+# Merging concept in git:
+-------------------------
+
+In Git, merging refers to the process of combining changes from difernt branches.
+
+When you work on a project with multiple collaborators or when you are managing differnt features of bug fixes in separate branches, you may need to merge those changes banck into the main branch or another target branch.
+
