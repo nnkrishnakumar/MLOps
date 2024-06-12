@@ -379,3 +379,45 @@ git switch -c <branch_name>       #to create a new branch and switch to it simil
 * These services make it easier for indiviuals and teams to use Git for version control and collaboractive software development.
 
 * Examples: GitHub, GitLab, Bitbucket, Azure DevOps services,SourceForge, GitKraken, AWS CodeCommit, etc.
+
+
+
+
+
+# What is YAML:
+---------------
+*   YAML is a data serialization language that is often use to writing configuration files.
+
+*   Popular programming language as it is human readable and easy to understand.
+
+*   It can also be used in conjuntion with other programming language.
+
+*   Use python-style indentation to indicate nesting.
+
+*   Whitespace for indentation and Tab are not allowed.
+
+*   No Format Symbole like braces, square brackets, or quotation tags.
+
+*   Uses .yml or .yaml file extension.
+
+* Scalars(Strings,integers, dates, numbers or Boolean)
+
+* A list (collection of items) and it can start with a dash, with indexntation separating the parent.
+
+* New Map can be created by either incresing indentation level or by resolving the previous map.
+
+
+# Section 5:Packaging the ML Models
+-------------------------------
+
+* Learning Modularization Approach for Code
+
+* Virtual Environments
+
+* Serialization and Deserialization of ML Models
+
+* Packaging in Python
+
+* Develop, Build and Deploy ML Packages
+
+
