@@ -421,3 +421,91 @@ git switch -c <branch_name>       #to create a new branch and switch to it simil
 * Develop, Build and Deploy ML Packages
 
 
+#####################################################
+
+Challenges in Working with Jupyter notebook 
+
+1> we need to creat envrionment 
+2> we have to create requirements.txt for dependency.   
+3> we have to create a serialization and deserialization of ML Model.(it means a python object hirarchy is convert into byte steam)
+Note: creation of byte code help us to transfer the saved model forn evironment to another environment.
+
+    : to execute the task of serialization and deserialization we have a library called "JOBLIB" and "pickle"
+
+
+4> to the deployment team we have to provide the trained model
+
+    > model sript >> serialization >> model file(we have to create to test script to the model file beacuse deployment team is not aware of my code which can do some basic task) >> provided to deployment team
+
+
+    Note: in jupyter notebook does not have test script support 
+
+
+5> Problem > Testing the python code :
+
+   Solution > pytest
+    
+6> We cannot use the python Notebook for Production Environment(it is possible but not recommended)
+
+    Problem:
+    --------
+    > Difficult to debug
+    > Require changes in multiple places
+    > Lot of Depenencies
+    > No Modularity in the code.
+    > Conflict of variable and function 
+    > Duplicate code snippets.
+
+    Solution:
+    --------
+    > Write Python Scripts
+    > Follow Moduler Programming
+    > Create Package
+
+
+ 
+
+ Solution in single screen:
+
+    > create virtual environemnt.
+    > requirements.txt
+    > joblib or pickle.
+    > pytest
+    > write python scripts
+    > Follow Moduler programming 
+    > Create Package
+
+
+-----------------------------------------------------------------------------------------------------------------
+Lecture : 53: Modular Programming
+--------------------------------
+> An approach where code is divided into separate files, where each file has everything necessary to execute a defined piece of logi & return expected output where imported by other files as input from them.
+
+
+# Module in Python
+
+> A python file that can hold classes, functions and variables.
+
+# Package in Python
+
+> One or more modules, such that they are interlinked with each other.
+
+> A directory with subdirectoried cab be called a package if it contains __ init __.py file.
+
+
+---------------------------------------------------------------------------------------------------------
+Lecture: 54: Creating Folder Hierarchy for ML Project:
+------------------------------------------------------
+
+* Building the ML Model Package
+
+> Create Package
+> Maintain the seperate modules.
+> Maintain separate files for preprocessing , data handling, manual configuration, etc
+> Build test cases -verify the integrity.
+
+
+
+Path for document which help us to create package :
+
+https://packaging.python.org/en/latest/guides/distributing-packages-using-setuptools/#
